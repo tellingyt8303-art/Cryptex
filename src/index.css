@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global Resets ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body { background: #080c14; color: #ffffff; overflow-x: hidden; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar        { width: 4px; height: 4px; }
+::-webkit-scrollbar-track  { background: #0a0f1a; }
+::-webkit-scrollbar-thumb  { background: #1e2d3d; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #2e4055; }
+
+/* ── Tabular numbers ── */
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+/* ── Selection ── */
+::selection { background: rgba(0,255,157,0.18); color: #00ff9d; }
+
+/* ── Focus ── */
+:focus-visible { outline: 1px solid rgba(0,255,157,0.5); outline-offset: 2px; }
